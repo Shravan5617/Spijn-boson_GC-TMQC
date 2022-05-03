@@ -1,0 +1,39 @@
+&SYSTEM
+ TYP_CAL                = "CTMQC",
+ SPIN_DIA               = F,
+ NRG_CHECK              = F,
+ NRG_GAP                = 0.0D0,
+ ADIA_NRG_GAP           =,
+ LZ_DIST_CUTOFF         =,
+ MODEL_POTENTIAL        = "NaI",
+ OPTION                 =,
+ NEW_POTENTIAL          = T,
+ N_DOF                  = 100,
+ PERIODIC_VARIABLE      = F,
+ PERIODICITY            = 0.0D0,
+ NSTATES                = 2,
+ M_PARAMETER            = 100.D0,
+ QMOM_FORCE             = T,
+ TYPE_DECO              = "",
+ C_PARAMETER            = 0.10D0,
+ JUMP_SEED              = 14,
+ INITIAL_CONDITION_SEED =1,
+/
+
+&DYNAMICS
+ FINAL_TIME      = 3500.0D0,
+ DT              = 0.5D0,
+ DUMP            = 10,
+ N_INIT_BO       = 1,
+ INIT_BOSTATE    = 1,
+ WEIGHT_INITBO   = 1.0D0,
+ NTRAJ           = 50,
+ MASS_INPUT      = 1836.D0,
+/
+
+&EXTERNAL_FILES 
+ POSITIONS_FILE   = "./initial_positions.dat",
+ MOMENTA_FILE     = "./initial_momenta.dat",
+ OUTPUT_FOLDER    = "./"
+/
+
